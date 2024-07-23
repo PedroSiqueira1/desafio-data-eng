@@ -3,3 +3,6 @@ pandas==2.2.2
 openpyxl==3.1.5
 polars==1.2.1
 fastexcel==0.11.0
+SQLAlchemy==2.0.31
+psycopg2==2.9.9
+dbt-postgres==1.8.2

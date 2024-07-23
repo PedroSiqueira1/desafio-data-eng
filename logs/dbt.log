@@ -1,0 +1,176 @@
+[0m22:53:00.221843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B8F72050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B8F71FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B8F7E010>]}
+
+
+============================== 22:53:00.237518 | d80a0a01-baa1-4c5f-965e-63b412947655 ==============================
+[0m22:53:00.237518 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:53:00.237518 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init terceirizados_dbt', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:53:00.268382 [debug] [MainThread]: Starter project path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\Lib\site-packages\dbt\include\starter_project
+[0m22:53:00.327492 [info ] [MainThread]: 
+Your new dbt project "terceirizados_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:53:00.329467 [info ] [MainThread]: Setting up your profile.
+[0m22:54:35.605212 [info ] [MainThread]: Profile terceirizados_dbt written to C:\Users\T-Gamer\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:54:35.605212 [debug] [MainThread]: Command `dbt init` succeeded at 22:54:35.605212 after 95.46 seconds
+[0m22:54:35.605212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B2C9F910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B2C23710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B2C236D0>]}
+[0m22:54:35.605212 [debug] [MainThread]: Flushing usage events
+[0m22:54:48.811697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB6AAF190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB43595D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB6AF2750>]}
+
+
+============================== 22:54:48.811697 | 9461c36d-159c-42f1-9c52-6010b982fc8e ==============================
+[0m22:54:48.811697 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:54:48.811697 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:54:48.847601 [info ] [MainThread]: dbt version: 1.8.4
+[0m22:54:48.847601 [info ] [MainThread]: python version: 3.11.9
+[0m22:54:48.847601 [info ] [MainThread]: python path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\python.exe
+[0m22:54:48.847601 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:54:48.915856 [info ] [MainThread]: Using profiles dir at C:\Users\T-Gamer\.dbt
+[0m22:54:48.915856 [info ] [MainThread]: Using profiles.yml file at C:\Users\T-Gamer\.dbt\profiles.yml
+[0m22:54:48.915856 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\dbt_project.yml
+[0m22:54:48.915856 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m22:54:48.915856 [debug] [MainThread]: Command `dbt debug` failed at 22:54:48.915856 after 0.19 seconds
+[0m22:54:48.915856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB6AF3C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB6AF2C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBB0813850>]}
+[0m22:54:48.915856 [debug] [MainThread]: Flushing usage events
+[0m22:56:16.339541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F20ED3510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F20DAD990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F20BCE090>]}
+
+
+============================== 22:56:16.339541 | 1983d6ac-98ec-42c2-9706-d42799cfb56f ==============================
+[0m22:56:16.339541 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:56:16.339541 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug --config-dir', 'send_anonymous_usage_stats': 'True'}
+[0m22:56:16.380259 [info ] [MainThread]: To view your profiles.yml file, run:
+
+start C:\Users\T-Gamer\.dbt
+[0m22:56:16.380259 [debug] [MainThread]: Command `dbt debug` succeeded at 22:56:16.380259 after 0.11 seconds
+[0m22:56:16.380259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F1ABDF890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F1AB63690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F1AB629D0>]}
+[0m22:56:16.380259 [debug] [MainThread]: Flushing usage events
+[0m22:57:16.555330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C99DD210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C88EF210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C9A03710>]}
+
+
+============================== 22:57:16.555330 | 2fc7b852-07db-4f14-b402-eb861da55e49 ==============================
+[0m22:57:16.555330 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:57:16.555330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init terceirizados_dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:16.594724 [debug] [MainThread]: Starter project path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\Lib\site-packages\dbt\include\starter_project
+[0m22:57:16.610793 [info ] [MainThread]: 
+Your new dbt project "terceirizados_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:57:16.610793 [info ] [MainThread]: Setting up your profile.
+[0m22:57:55.669975 [info ] [MainThread]: Profile terceirizados_dbt written to C:\Users\T-Gamer\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:57:55.669975 [debug] [MainThread]: Command `dbt init` succeeded at 22:57:55.669975 after 39.19 seconds
+[0m22:57:55.669975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C376F910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C68D2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C97B1B90>]}
+[0m22:57:55.669975 [debug] [MainThread]: Flushing usage events
+[0m22:58:05.700117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001948A79F250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019488048F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019489D99A90>]}
+
+
+============================== 22:58:05.700117 | 10532da9-21c7-401a-831b-fb16045c8e58 ==============================
+[0m22:58:05.700117 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:58:05.700117 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:58:05.728213 [info ] [MainThread]: dbt version: 1.8.4
+[0m22:58:05.728213 [info ] [MainThread]: python version: 3.11.9
+[0m22:58:05.728213 [info ] [MainThread]: python path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\python.exe
+[0m22:58:05.728213 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:58:05.794342 [info ] [MainThread]: Using profiles dir at C:\Users\T-Gamer\.dbt
+[0m22:58:05.794342 [info ] [MainThread]: Using profiles.yml file at C:\Users\T-Gamer\.dbt\profiles.yml
+[0m22:58:05.809512 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\dbt_project.yml
+[0m22:58:05.810777 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m22:58:05.812808 [debug] [MainThread]: Command `dbt debug` failed at 22:58:05.811813 after 0.19 seconds
+[0m22:58:05.812808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001948A7E3510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001948A7E3B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019484513850>]}
+[0m22:58:05.813784 [debug] [MainThread]: Flushing usage events
+[0m23:08:45.577690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C13ECE1750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C13ECF3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C13ECF3590>]}
+
+
+============================== 23:08:45.586762 | 173d043b-1662-4705-bb24-b4f7b3ade41d ==============================
+[0m23:08:45.586762 [info ] [MainThread]: Running with dbt=1.8.4
+[0m23:08:45.586762 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:08:45.586762 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:08:45.591770 [debug] [MainThread]: Command `dbt run` failed at 23:08:45.591770 after 0.09 seconds
+[0m23:08:45.591770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C138A43850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C13ECAD190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C13ECAD290>]}
+[0m23:08:45.591770 [debug] [MainThread]: Flushing usage events
+[0m23:42:36.256833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5D3FFA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5D438C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5D3FF290>]}
+
+
+============================== 23:42:36.261798 | 2a948e9c-2cc7-4d1f-8e2b-c9029e914a03 ==============================
+[0m23:42:36.261798 [info ] [MainThread]: Running with dbt=1.8.4
+[0m23:42:36.262807 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init orcamento_contratos_terceirizados', 'send_anonymous_usage_stats': 'True'}
+[0m23:42:36.292816 [debug] [MainThread]: Starter project path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\Lib\site-packages\dbt\include\starter_project
+[0m23:42:36.312798 [info ] [MainThread]: 
+Your new dbt project "orcamento_contratos_terceirizados" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:42:36.314798 [info ] [MainThread]: Setting up your profile.
+[0m23:43:03.006524 [info ] [MainThread]: Profile orcamento_contratos_terceirizados written to C:\Users\T-Gamer\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:43:03.009493 [debug] [MainThread]: Command `dbt init` succeeded at 23:43:03.008526 after 26.83 seconds
+[0m23:43:03.010492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE571DF890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE57163B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE5D409110>]}
+[0m23:43:03.011493 [debug] [MainThread]: Flushing usage events
+[0m23:44:51.383190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEDB6FC5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEDACA3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEDB6FC4D0>]}
+
+
+============================== 23:44:51.388157 | 8c674f84-b0ff-4a55-b4d6-301ce15457d6 ==============================
+[0m23:44:51.388157 [info ] [MainThread]: Running with dbt=1.8.4
+[0m23:44:51.389157 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\T-Gamer\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init orcamento_contratos', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:44:51.418595 [debug] [MainThread]: Starter project path: c:\Users\T-Gamer\Documents\Progamação\Prefeitura\desafio-data-eng\.conda\Lib\site-packages\dbt\include\starter_project
+[0m23:44:51.437629 [info ] [MainThread]: 
+Your new dbt project "orcamento_contratos" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:44:51.440594 [info ] [MainThread]: Setting up your profile.
+[0m23:53:10.750074 [info ] [MainThread]: Profile orcamento_contratos written to C:\Users\T-Gamer\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:53:10.754068 [debug] [MainThread]: Command `dbt init` succeeded at 23:53:10.753074 after 499.45 seconds
+[0m23:53:10.755068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CED545F850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEDB73C390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEDB73D250>]}
+[0m23:53:10.756071 [debug] [MainThread]: Flushing usage events

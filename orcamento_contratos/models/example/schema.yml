@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: high_cost_prf
+    description: "Tabela derivada que contém terceirizados do DEPARTAMENTO DE POLICIA RODOVIARIA FEDERAL com custo mensal maior que 15 mil reais."
+    columns:
+      - name: id_terc
+        description: "Identificador do registro do terceirizado nesta base de dados."
+      - name: nm_terceirizado
+        description: "Nome completo do terceirizado."
+      - name: nr_cnpj
+        description: "CNPJ da empresa terceirizada."
+      - name: nm_razao_social
+        description: "Razão Social da empresa terceirizada."
+      - name: nm_categoria_profissional
+        description: "Código CBO e descrição da categoria profissional do terceirizado."
+      - name: nm_escolaridade
+        description: "Nível de escolaridade exigido pela ocupação do terceirizado."
+      - name: nr_jornada
+        description: "Quantidade de horas semanais de trabalho do terceirizado."
+      - name: nm_unidade_prestacao
+        description: "Descrição da unidade onde o terceirizado trabalha."
+      - name: vl_mensal_custo
+        description: "Custo total mensal do terceirizado (R$)."
+      - name: nm_ug_tabela_ug
+        description: "Nome da unidade gestora do terceirizado."
+

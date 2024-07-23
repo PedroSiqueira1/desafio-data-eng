@@ -1,0 +1,24 @@
+Nome da Coluna,Tipo,Descrição
+id_terc,STRING,Identificador do registro do terceirizado nesta base de dados.
+sg_orgao_sup_tabela_ug,STRING,Sigla do órgão superior da unidade gestora do terceirizado.
+cd_ug_gestora,STRING,Código da unidade gestora (SIAFI) do terceirizado.
+nm_ug_tabela_ug,STRING,Nome da unidade gestora do terceirizado.
+sg_ug_gestora,STRING,Sigla da unidade gestora do terceirizado.
+nr_contrato,STRING,Número do contrato com a empresa terceirizada.
+nr_cnpj,STRING,CNPJ da empresa terceirizada.
+nm_razao_social,STRING,Razão Social da empresa terceirizada.
+nr_cpf,STRING,CPF do terceirizado.
+nm_terceirizado,STRING,Nome completo do terceirizado.
+nm_categoria_profissional,STRING,Código CBO e descrição da categoria profissional do terceirizado.
+nm_escolaridade,STRING,Nível de escolaridade exigido pela ocupação do terceirizado.
+nr_jornada,STRING,Quantidade de horas semanais de trabalho do terceirizado.
+nm_unidade_prestacao,STRING,Descrição da unidade onde o terceirizado trabalha.
+vl_mensal_salario,FLOAT,Valor mensal do salário do terceirizado (R$).
+vl_mensal_custo,FLOAT,Custo total mensal do terceirizado (R$).
+nr_mes_carga,STRING,Número do mês da carga de dados.
+nm_mes_carga,STRING,Mês da carga dos dados.
+nr_ano_carga,STRING,Ano da carga dos dados.
+sg_orgao,STRING,Sigla do órgão onde o terceirizado trabalha.
+nm_orgao,STRING,Nome do órgão onde o terceirizado trabalha.
+cd_orgao_siafi,STRING,Código SIAFI do órgão onde o terceirizado trabalha.
+cd_orgao_siape,STRING,Código SIAPE do órgão onde o terceirizado trabalha.
