@@ -1,8 +1,10 @@
 import os
 import requests
 import polars as pl
+from prefect import task
 
-def download_data(csv_file='urls.csv', raw_data_path='./data/raw_data', retries=5):
+@task
+def download_data(csv_file='urls.csv', raw_data_path='../data/raw_data', retries=5):
     """
     Download data from the urls in the csv file and save it to the raw_data_path directory.
     """
@@ -55,4 +57,3 @@ def download_data(csv_file='urls.csv', raw_data_path='./data/raw_data', retries=
         if not success:
             print(f"Failed to download file for {year}-{month} after {retries} attempts.")
 
-download_data()

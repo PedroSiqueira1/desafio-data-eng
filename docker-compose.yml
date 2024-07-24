@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: prefect-postgres
+    environment:
+      - POSTGRES_USER=${USER}
+      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_DB=${DATABASE2}
+    volumes:
+      - prefectdb:/var/lib/postgresql/data
+      - ./orcamento_contratos/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  prefect:
+    image: prefecthq/prefect:2-latest
+    container_name: prefect-server
+    environment:
+      - PREFECT_API_DATABASE_CONNECTION_URL=${PREFECT_API_DATABASE_CONNECTION_URL2}
+      - PREFECT_API_URL=${PREFECT_API_URL}
+      - PREFECT_ORION_UI_API_URL=http://0.0.0.0:4200/api
+
+    ports:
+      - "4200:4200"
+    command: prefect server start --host 0.0.0.0
+    depends_on:
+      - postgres
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: data-app
+    depends_on:
+      - postgres
+    environment:
+      - USER=${USER}
+      - PASSWORD=${PASSWORD}
+      - DATABASE=${DATABASE2}
+      - HOST=prefect-postgres
+      - PORT=5432
+
+    command: ["python", "main.py"]
+
+volumes:
+  prefectdb:

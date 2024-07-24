@@ -1,8 +1,9 @@
 import os
 import polars as pl
-from sqlalchemy import create_engine
+from prefect import task
 
-def load_to_database(engine, clean_data_path='./data/clean_data'):
+@task
+def load_to_database(engine, clean_data_path='../data/clean_data'):
     """
     Load the data in the clean_data_path directory to the database.
     """
@@ -17,14 +18,3 @@ def load_to_database(engine, clean_data_path='./data/clean_data'):
         print(f"Loaded {file_name} into database.")
 
 
-# Get the environment variables
-username = os.getenv('USER')
-password = os.getenv('PASSWORD')
-host = os.getenv('HOST')
-port = os.getenv('PORT')
-database = os.getenv('DATABASE')
-
-# Connect to the database
-db_string = f'postgresql://{username}:{password}@{host}:{port}/{database}'
-engine = create_engine(db_string)
-load_to_database(engine)

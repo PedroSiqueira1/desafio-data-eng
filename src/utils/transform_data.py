@@ -1,8 +1,9 @@
 import os
 import polars as pl
+from prefect import task
 
-
-def transform_data(clean_data_path='./data/clean_data', raw_data_path='./data/raw_data'):
+@task
+def transform_data(clean_data_path='../data/clean_data', raw_data_path='../data/raw_data'):
     """
     Transform the data in the raw_data_path directory and save it to the clean_data_path directory.
     """
@@ -85,4 +86,3 @@ def transform_data(clean_data_path='./data/clean_data', raw_data_path='./data/ra
         clean_and_save(df, file)
         print(f"{file} file saved in clean_data folder")
 
-transform_data()
