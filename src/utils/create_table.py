@@ -3,6 +3,9 @@ from prefect import task
 
 @task
 def create_table(engine):
+    '''
+    Create the table orcamento_contratos_terceirizados in the database.
+    '''
     metadata = MetaData()
 
     clean_data_table = Table(

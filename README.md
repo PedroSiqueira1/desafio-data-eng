@@ -17,6 +17,7 @@ Este projeto visa construir uma pipeline de dados completa, seguindo as seguinte
 
 ## Pré-requisitos
 
+- Python (3.11.9)
 - Docker
 - Docker Compose
 
@@ -24,51 +25,49 @@ Este projeto visa construir uma pipeline de dados completa, seguindo as seguinte
 
 ### Passo 1: Configurar Variáveis de Ambiente
 
-Crie um arquivo `.env` no diretório raiz do projeto e adicione as seguintes variáveis de ambiente:
+Atualize o arquivo `.env` no diretório raiz do projeto para configurar suas variáveis de ambiente:
 
 ```
-    HOST=seu_host
-    USER=seu_usuário
-    PASSWORD=sua_senha
-    DATABASE=seu_database
-    PORT=sua_porta
-    DIALECT=postgresql+psycopg2 (Não modifique esta variável)
+   # Postgres keys
+   HOST=seuhost
+   USER=seuusuario
+   PASSWORD=suasenha
+   DATABASE2=seubanco
+   PORT=5432
+
+   # Prefect keys
+   PREFECT_API_DATABASE_CONNECTION_URL2=postgresql+asyncpg://seuusuario:suasenha@prefect-postgres:5432/prefect
+   APP_DATABASE_CONNECTION_URL=postgresql+asyncpg://seuusuario:suasenha@prefect-postgres:5432/seubanco
+   PREFECT_API_URL2=http://host.docker.internal:4200/api
+
+   # Flags
+   UPDATE_URLS=False (Se não possuir os url's dos últimos meses, mude esta flag para True )
 ```
 
-### Passo 2: Inicializar o Banco de Dados
+### Passo 2: Construir e Executar os Containers Docker e Prefect Server
 
-Certifique-se de que o arquivo `init.sql` está configurado corretamente para criar o banco de dados e as tabelas necessárias.
-
-### Passo 3: Construir e Executar os Containers Docker
-
-Execute o seguinte comando para construir e iniciar os containers Docker:
+Execute o seguinte comando para construir e iniciar os containers Docker e Prefect Server:
 
 ```sh
 docker-compose up --build
 ```
 
-### Passo 4: Acessar o Servidor Prefect
+### Passo 3: Acessar o Servidor Prefect
 
-Abra o seu navegador e vá para http://localhost:4200 para acessar a interface do servidor Prefect.
+Abra o seu navegador e vá para http://localhost:4200 para acessar a interface do Prefect Server.
 
-### Passo 5: Verificar Dados no PostgreSQL
+### Passo 4: Verificar Dados no PostgreSQL
 
 Para conectar-se ao banco de dados PostgreSQL dentro do container, execute:
 
 ```sh
-docker exec -it prefect-postgres psql -U seu_usuario_postgres -d orcamento_contratos
+docker exec -it prefect-postgres psql -U seuusuario 
 ```
 
 Para listar todos os bancos de dados:
 
 ```sh
 \l
-```
-
-Para conectar-se ao banco de dados orcamento_contratos:
-
-```sh
-\c orcamento_contratos
 ```
 
 ## Serviços
