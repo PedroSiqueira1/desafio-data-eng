@@ -8,7 +8,7 @@ from prefect import flow
 @flow(log_prints=True)
 def store_new_data():
 
-    utils.update_urls.update_urls_csv(path='urls.csv')
+    utils.update_urls.update_urls_csv(file_path='urls.csv')
     utils.download_data.download_data(csv_file='urls.csv', raw_data_path='./data/raw_data', retries=5)
     utils.transform_data.transform_data(clean_data_path='./data/clean_data', raw_data_path='./data/raw_data')
     utils.load_to_database.load_to_database(engine,clean_data_path='./data/clean_data')

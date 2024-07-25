@@ -21,6 +21,13 @@ Este projeto visa construir uma pipeline de dados completa, seguindo as seguinte
 - Docker
 - Docker Compose
 
+## Serviços
+
+- **Postgres**: Banco de dados PostgreSQL para armazenar dados processados.
+- **Prefect**: Servidor Prefect para orquestrar e gerenciar fluxos de trabalho de dados.
+- **App**: Aplicação Python para fazer download, transformar e carregar dados.
+- **DBT**: Data Build Tool para transformar dados após o carregamento.
+
 ## Começando
 
 ### Passo 1: Configurar Variáveis de Ambiente
@@ -70,9 +77,53 @@ Para listar todos os bancos de dados:
 \l
 ```
 
-## Serviços
+### Passo 5: Instalar Requirements
 
-- **Postgres**: Banco de dados PostgreSQL para armazenar dados processados.
-- **Prefect**: Servidor Prefect para orquestrar e gerenciar fluxos de trabalho de dados.
-- **App**: Aplicação Python para fazer download, transformar e carregar dados.
-- **DBT**: Data Build Tool para transformar dados após o carregamento.
+No seu ambiente local, crie e ative um ambiente virtual:
+
+```sh
+python -m venv venv
+source venv/bin/activate  # Linux/MacOS
+venv\Scripts\activate  # Windows
+```
+
+Instale as dependências Python listadas no arquivo requirements.txt:
+
+```sh
+pip install -r requirements.txt
+```
+
+### Passo 6: Configurar DBT
+
+Crie um arquivo profiles.yml no diretório ~/.dbt/ com o seguinte conteúdo:
+
+```yaml
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: prefect-postgres
+      user: seuusuario
+      password: suasenha
+      dbname: orcamento_contratos
+      schema: seu_esquema  
+      port: 5432
+```
+
+### Passo 7: Executar DBT
+
+No seu ambiente local, navegue até o diretório do projeto DBT e execute os seguintes comandos:
+
+Para executar as transformações e criar a tabela derivada:
+
+```sh
+dbt run
+```
+
+Para verificar se as transformações foram executadas corretamente:
+
+```sh
+dbt test
+```
+
